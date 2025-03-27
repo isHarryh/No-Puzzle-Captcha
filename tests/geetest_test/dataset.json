@@ -1,0 +1,927 @@
+{
+    "name": "GeeTest Test",
+    "error_tolerance": 5,
+    "revision_date": "2025-03-27",
+    "cases": [
+        {
+            "background": "IMG_000_O.png",
+            "puzzle": "IMG_000_P.png",
+            "position": [
+                194,
+                73
+            ]
+        },
+        {
+            "background": "IMG_001_O.png",
+            "puzzle": "IMG_001_P.png",
+            "position": [
+                194,
+                20
+            ]
+        },
+        {
+            "background": "IMG_002_O.png",
+            "puzzle": "IMG_002_P.png",
+            "position": [
+                111,
+                56
+            ]
+        },
+        {
+            "background": "IMG_003_O.png",
+            "puzzle": "IMG_003_P.png",
+            "position": [
+                209,
+                53
+            ]
+        },
+        {
+            "background": "IMG_004_O.png",
+            "puzzle": "IMG_004_P.png",
+            "position": [
+                137,
+                115
+            ]
+        },
+        {
+            "background": "IMG_005_O.png",
+            "puzzle": "IMG_005_P.png",
+            "position": [
+                111,
+                76
+            ]
+        },
+        {
+            "background": "IMG_006_O.png",
+            "puzzle": "IMG_006_P.png",
+            "position": [
+                186,
+                94
+            ]
+        },
+        {
+            "background": "IMG_007_O.png",
+            "puzzle": "IMG_007_P.png",
+            "position": [
+                160,
+                116
+            ]
+        },
+        {
+            "background": "IMG_008_O.png",
+            "puzzle": "IMG_008_P.png",
+            "position": [
+                191,
+                73
+            ]
+        },
+        {
+            "background": "IMG_009_O.png",
+            "puzzle": "IMG_009_P.png",
+            "position": [
+                175,
+                10
+            ]
+        },
+        {
+            "background": "IMG_010_O.png",
+            "puzzle": "IMG_010_P.png",
+            "position": [
+                186,
+                8
+            ]
+        },
+        {
+            "background": "IMG_011_O.png",
+            "puzzle": "IMG_011_P.png",
+            "position": [
+                207,
+                109
+            ]
+        },
+        {
+            "background": "IMG_012_O.png",
+            "puzzle": "IMG_012_P.png",
+            "position": [
+                126,
+                14
+            ]
+        },
+        {
+            "background": "IMG_013_O.png",
+            "puzzle": "IMG_013_P.png",
+            "position": [
+                220,
+                89
+            ]
+        },
+        {
+            "background": "IMG_014_O.png",
+            "puzzle": "IMG_014_P.png",
+            "position": [
+                112,
+                22
+            ]
+        },
+        {
+            "background": "IMG_015_O.png",
+            "puzzle": "IMG_015_P.png",
+            "position": [
+                105,
+                31
+            ]
+        },
+        {
+            "background": "IMG_016_O.png",
+            "puzzle": "IMG_016_P.png",
+            "position": [
+                168,
+                74
+            ]
+        },
+        {
+            "background": "IMG_017_O.png",
+            "puzzle": "IMG_017_P.png",
+            "position": [
+                215,
+                95
+            ]
+        },
+        {
+            "background": "IMG_018_O.png",
+            "puzzle": "IMG_018_P.png",
+            "position": [
+                180,
+                34
+            ]
+        },
+        {
+            "background": "IMG_019_O.png",
+            "puzzle": "IMG_019_P.png",
+            "position": [
+                171,
+                34
+            ]
+        },
+        {
+            "background": "IMG_020_O.png",
+            "puzzle": "IMG_020_P.png",
+            "position": [
+                175,
+                13
+            ]
+        },
+        {
+            "background": "IMG_021_O.png",
+            "puzzle": "IMG_021_P.png",
+            "position": [
+                181,
+                118
+            ]
+        },
+        {
+            "background": "IMG_022_O.png",
+            "puzzle": "IMG_022_P.png",
+            "position": [
+                198,
+                57
+            ]
+        },
+        {
+            "background": "IMG_023_O.png",
+            "puzzle": "IMG_023_P.png",
+            "position": [
+                212,
+                112
+            ]
+        },
+        {
+            "background": "IMG_024_O.png",
+            "puzzle": "IMG_024_P.png",
+            "position": [
+                138,
+                99
+            ]
+        },
+        {
+            "background": "IMG_025_O.png",
+            "puzzle": "IMG_025_P.png",
+            "position": [
+                182,
+                74
+            ]
+        },
+        {
+            "background": "IMG_026_O.png",
+            "puzzle": "IMG_026_P.png",
+            "position": [
+                214,
+                72
+            ]
+        },
+        {
+            "background": "IMG_027_O.png",
+            "puzzle": "IMG_027_P.png",
+            "position": [
+                120,
+                68
+            ]
+        },
+        {
+            "background": "IMG_028_O.png",
+            "puzzle": "IMG_028_P.png",
+            "position": [
+                192,
+                50
+            ]
+        },
+        {
+            "background": "IMG_029_O.png",
+            "puzzle": "IMG_029_P.png",
+            "position": [
+                129,
+                105
+            ]
+        },
+        {
+            "background": "IMG_030_O.png",
+            "puzzle": "IMG_030_P.png",
+            "position": [
+                209,
+                21
+            ]
+        },
+        {
+            "background": "IMG_031_O.png",
+            "puzzle": "IMG_031_P.png",
+            "position": [
+                164,
+                111
+            ]
+        },
+        {
+            "background": "IMG_032_O.png",
+            "puzzle": "IMG_032_P.png",
+            "position": [
+                107,
+                33
+            ]
+        },
+        {
+            "background": "IMG_033_O.png",
+            "puzzle": "IMG_033_P.png",
+            "position": [
+                169,
+                83
+            ]
+        },
+        {
+            "background": "IMG_034_O.png",
+            "puzzle": "IMG_034_P.png",
+            "position": [
+                218,
+                120
+            ]
+        },
+        {
+            "background": "IMG_035_O.png",
+            "puzzle": "IMG_035_P.png",
+            "position": [
+                181,
+                99
+            ]
+        },
+        {
+            "background": "IMG_036_O.png",
+            "puzzle": "IMG_036_P.png",
+            "position": [
+                201,
+                29
+            ]
+        },
+        {
+            "background": "IMG_037_O.png",
+            "puzzle": "IMG_037_P.png",
+            "position": [
+                211,
+                43
+            ]
+        },
+        {
+            "background": "IMG_038_O.png",
+            "puzzle": "IMG_038_P.png",
+            "position": [
+                191,
+                82
+            ]
+        },
+        {
+            "background": "IMG_039_O.png",
+            "puzzle": "IMG_039_P.png",
+            "position": [
+                210,
+                18
+            ]
+        },
+        {
+            "background": "IMG_040_O.png",
+            "puzzle": "IMG_040_P.png",
+            "position": [
+                187,
+                67
+            ]
+        },
+        {
+            "background": "IMG_041_O.png",
+            "puzzle": "IMG_041_P.png",
+            "position": [
+                172,
+                30
+            ]
+        },
+        {
+            "background": "IMG_042_O.png",
+            "puzzle": "IMG_042_P.png",
+            "position": [
+                207,
+                87
+            ]
+        },
+        {
+            "background": "IMG_043_O.png",
+            "puzzle": "IMG_043_P.png",
+            "position": [
+                108,
+                36
+            ]
+        },
+        {
+            "background": "IMG_044_O.png",
+            "puzzle": "IMG_044_P.png",
+            "position": [
+                196,
+                97
+            ]
+        },
+        {
+            "background": "IMG_045_O.png",
+            "puzzle": "IMG_045_P.png",
+            "position": [
+                125,
+                111
+            ]
+        },
+        {
+            "background": "IMG_046_O.png",
+            "puzzle": "IMG_046_P.png",
+            "position": [
+                208,
+                66
+            ]
+        },
+        {
+            "background": "IMG_047_O.png",
+            "puzzle": "IMG_047_P.png",
+            "position": [
+                220,
+                15
+            ]
+        },
+        {
+            "background": "IMG_048_O.png",
+            "puzzle": "IMG_048_P.png",
+            "position": [
+                133,
+                37
+            ]
+        },
+        {
+            "background": "IMG_049_O.png",
+            "puzzle": "IMG_049_P.png",
+            "position": [
+                217,
+                95
+            ]
+        },
+        {
+            "background": "IMG_050_O.png",
+            "puzzle": "IMG_050_P.png",
+            "position": [
+                113,
+                89
+            ]
+        },
+        {
+            "background": "IMG_051_O.png",
+            "puzzle": "IMG_051_P.png",
+            "position": [
+                196,
+                106
+            ]
+        },
+        {
+            "background": "IMG_052_O.png",
+            "puzzle": "IMG_052_P.png",
+            "position": [
+                191,
+                49
+            ]
+        },
+        {
+            "background": "IMG_053_O.png",
+            "puzzle": "IMG_053_P.png",
+            "position": [
+                198,
+                111
+            ]
+        },
+        {
+            "background": "IMG_054_O.png",
+            "puzzle": "IMG_054_P.png",
+            "position": [
+                174,
+                108
+            ]
+        },
+        {
+            "background": "IMG_055_O.png",
+            "puzzle": "IMG_055_P.png",
+            "position": [
+                175,
+                63
+            ]
+        },
+        {
+            "background": "IMG_056_O.png",
+            "puzzle": "IMG_056_P.png",
+            "position": [
+                175,
+                63
+            ]
+        },
+        {
+            "background": "IMG_057_O.png",
+            "puzzle": "IMG_057_P.png",
+            "position": [
+                202,
+                35
+            ]
+        },
+        {
+            "background": "IMG_058_O.png",
+            "puzzle": "IMG_058_P.png",
+            "position": [
+                180,
+                114
+            ]
+        },
+        {
+            "background": "IMG_059_O.png",
+            "puzzle": "IMG_059_P.png",
+            "position": [
+                165,
+                63
+            ]
+        },
+        {
+            "background": "IMG_060_O.png",
+            "puzzle": "IMG_060_P.png",
+            "position": [
+                188,
+                102
+            ]
+        },
+        {
+            "background": "IMG_061_O.png",
+            "puzzle": "IMG_061_P.png",
+            "position": [
+                173,
+                57
+            ]
+        },
+        {
+            "background": "IMG_062_O.png",
+            "puzzle": "IMG_062_P.png",
+            "position": [
+                209,
+                102
+            ]
+        },
+        {
+            "background": "IMG_063_O.png",
+            "puzzle": "IMG_063_P.png",
+            "position": [
+                208,
+                119
+            ]
+        },
+        {
+            "background": "IMG_064_O.png",
+            "puzzle": "IMG_064_P.png",
+            "position": [
+                215,
+                35
+            ]
+        },
+        {
+            "background": "IMG_065_O.png",
+            "puzzle": "IMG_065_P.png",
+            "position": [
+                189,
+                92
+            ]
+        },
+        {
+            "background": "IMG_066_O.png",
+            "puzzle": "IMG_066_P.png",
+            "position": [
+                218,
+                109
+            ]
+        },
+        {
+            "background": "IMG_067_O.png",
+            "puzzle": "IMG_067_P.png",
+            "position": [
+                161,
+                84
+            ]
+        },
+        {
+            "background": "IMG_068_O.png",
+            "puzzle": "IMG_068_P.png",
+            "position": [
+                190,
+                22
+            ]
+        },
+        {
+            "background": "IMG_069_O.png",
+            "puzzle": "IMG_069_P.png",
+            "position": [
+                196,
+                12
+            ]
+        },
+        {
+            "background": "IMG_070_O.png",
+            "puzzle": "IMG_070_P.png",
+            "position": [
+                127,
+                34
+            ]
+        },
+        {
+            "background": "IMG_071_O.png",
+            "puzzle": "IMG_071_P.png",
+            "position": [
+                217,
+                27
+            ]
+        },
+        {
+            "background": "IMG_072_O.png",
+            "puzzle": "IMG_072_P.png",
+            "position": [
+                207,
+                75
+            ]
+        },
+        {
+            "background": "IMG_073_O.png",
+            "puzzle": "IMG_073_P.png",
+            "position": [
+                196,
+                38
+            ]
+        },
+        {
+            "background": "IMG_074_O.png",
+            "puzzle": "IMG_074_P.png",
+            "position": [
+                169,
+                44
+            ]
+        },
+        {
+            "background": "IMG_075_O.png",
+            "puzzle": "IMG_075_P.png",
+            "position": [
+                170,
+                16
+            ]
+        },
+        {
+            "background": "IMG_076_O.png",
+            "puzzle": "IMG_076_P.png",
+            "position": [
+                211,
+                30
+            ]
+        },
+        {
+            "background": "IMG_077_O.png",
+            "puzzle": "IMG_077_P.png",
+            "position": [
+                191,
+                23
+            ]
+        },
+        {
+            "background": "IMG_078_O.png",
+            "puzzle": "IMG_078_P.png",
+            "position": [
+                215,
+                48
+            ]
+        },
+        {
+            "background": "IMG_079_O.png",
+            "puzzle": "IMG_079_P.png",
+            "position": [
+                208,
+                104
+            ]
+        },
+        {
+            "background": "IMG_080_O.png",
+            "puzzle": "IMG_080_P.png",
+            "position": [
+                200,
+                85
+            ]
+        },
+        {
+            "background": "IMG_081_O.png",
+            "puzzle": "IMG_081_P.png",
+            "position": [
+                190,
+                52
+            ]
+        },
+        {
+            "background": "IMG_082_O.png",
+            "puzzle": "IMG_082_P.png",
+            "position": [
+                176,
+                101
+            ]
+        },
+        {
+            "background": "IMG_083_O.png",
+            "puzzle": "IMG_083_P.png",
+            "position": [
+                209,
+                100
+            ]
+        },
+        {
+            "background": "IMG_084_O.png",
+            "puzzle": "IMG_084_P.png",
+            "position": [
+                167,
+                90
+            ]
+        },
+        {
+            "background": "IMG_085_O.png",
+            "puzzle": "IMG_085_P.png",
+            "position": [
+                214,
+                85
+            ]
+        },
+        {
+            "background": "IMG_086_O.png",
+            "puzzle": "IMG_086_P.png",
+            "position": [
+                190,
+                107
+            ]
+        },
+        {
+            "background": "IMG_087_O.png",
+            "puzzle": "IMG_087_P.png",
+            "position": [
+                175,
+                15
+            ]
+        },
+        {
+            "background": "IMG_088_O.png",
+            "puzzle": "IMG_088_P.png",
+            "position": [
+                206,
+                12
+            ]
+        },
+        {
+            "background": "IMG_089_O.png",
+            "puzzle": "IMG_089_P.png",
+            "position": [
+                186,
+                83
+            ]
+        },
+        {
+            "background": "IMG_090_O.png",
+            "puzzle": "IMG_090_P.png",
+            "position": [
+                108,
+                82
+            ]
+        },
+        {
+            "background": "IMG_091_O.png",
+            "puzzle": "IMG_091_P.png",
+            "position": [
+                200,
+                52
+            ]
+        },
+        {
+            "background": "IMG_092_O.png",
+            "puzzle": "IMG_092_P.png",
+            "position": [
+                188,
+                71
+            ]
+        },
+        {
+            "background": "IMG_093_O.png",
+            "puzzle": "IMG_093_P.png",
+            "position": [
+                112,
+                53
+            ]
+        },
+        {
+            "background": "IMG_094_O.png",
+            "puzzle": "IMG_094_P.png",
+            "position": [
+                168,
+                29
+            ]
+        },
+        {
+            "background": "IMG_095_O.png",
+            "puzzle": "IMG_095_P.png",
+            "position": [
+                116,
+                106
+            ]
+        },
+        {
+            "background": "IMG_096_O.png",
+            "puzzle": "IMG_096_P.png",
+            "position": [
+                117,
+                61
+            ]
+        },
+        {
+            "background": "IMG_097_O.png",
+            "puzzle": "IMG_097_P.png",
+            "position": [
+                186,
+                35
+            ]
+        },
+        {
+            "background": "IMG_098_O.png",
+            "puzzle": "IMG_098_P.png",
+            "position": [
+                111,
+                52
+            ]
+        },
+        {
+            "background": "IMG_099_O.png",
+            "puzzle": "IMG_099_P.png",
+            "position": [
+                191,
+                24
+            ]
+        },
+        {
+            "background": "IMG_100_O.png",
+            "puzzle": "IMG_100_P.png",
+            "position": [
+                210,
+                104
+            ]
+        },
+        {
+            "background": "IMG_101_O.png",
+            "puzzle": "IMG_101_P.png",
+            "position": [
+                210,
+                89
+            ]
+        },
+        {
+            "background": "IMG_102_O.png",
+            "puzzle": "IMG_102_P.png",
+            "position": [
+                212,
+                16
+            ]
+        },
+        {
+            "background": "IMG_103_O.png",
+            "puzzle": "IMG_103_P.png",
+            "position": [
+                213,
+                31
+            ]
+        },
+        {
+            "background": "IMG_104_O.png",
+            "puzzle": "IMG_104_P.png",
+            "position": [
+                193,
+                22
+            ]
+        },
+        {
+            "background": "IMG_105_O.png",
+            "puzzle": "IMG_105_P.png",
+            "position": [
+                211,
+                119
+            ]
+        },
+        {
+            "background": "IMG_106_O.png",
+            "puzzle": "IMG_106_P.png",
+            "position": [
+                170,
+                41
+            ]
+        },
+        {
+            "background": "IMG_107_O.png",
+            "puzzle": "IMG_107_P.png",
+            "position": [
+                203,
+                60
+            ]
+        },
+        {
+            "background": "IMG_108_O.png",
+            "puzzle": "IMG_108_P.png",
+            "position": [
+                179,
+                94
+            ]
+        },
+        {
+            "background": "IMG_109_O.png",
+            "puzzle": "IMG_109_P.png",
+            "position": [
+                129,
+                8
+            ]
+        },
+        {
+            "background": "IMG_110_O.png",
+            "puzzle": "IMG_110_P.png",
+            "position": [
+                210,
+                47
+            ]
+        },
+        {
+            "background": "IMG_111_O.png",
+            "puzzle": "IMG_111_P.png",
+            "position": [
+                209,
+                75
+            ]
+        },
+        {
+            "background": "IMG_112_O.png",
+            "puzzle": "IMG_112_P.png",
+            "position": [
+                203,
+                40
+            ]
+        },
+        {
+            "background": "IMG_113_O.png",
+            "puzzle": "IMG_113_P.png",
+            "position": [
+                190,
+                87
+            ]
+        },
+        {
+            "background": "IMG_114_O.png",
+            "puzzle": "IMG_114_P.png",
+            "position": [
+                169,
+                24
+            ]
+        }
+    ]
+}
