@@ -3,6 +3,9 @@ No-Puzzle-Captcha
 Lightweight Library for Slide Puzzle Captcha Solving  
 轻量级的滑动拼图验证码自动识别库
 
+![PyPI - Version](https://img.shields.io/pypi/v/no_puzzle_captcha?label=PyPI%20version)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/no_puzzle_captcha?label=PyPI%20downloads)
+
 ## Introduction
 
 This Python library is designed to solve common puzzle CAPTCHAs (aka slide CAPTCHAs), using OpenCV to achieve high inference speed with low computational cost.
