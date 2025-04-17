@@ -1,19 +1,24 @@
-[tool.poetry]
+[project]
 name = "No-Puzzle-Captcha"
 version = "1.0.0"
 description = "Lightweight Library for Slide Puzzle Captcha Solving"
-authors = ["Harry Huang <harryhuang2652@qq.com>"]
+authors = [
+    {name = "Harry Huang", email = "harryhuang2652@qq.com"}
+]
 license = "MIT"
 readme = "README.md"
+requires-python = ">=3.8,<4"
+dependencies = [
+    "opencv-python >=4.1,<5"
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    "Operating System :: OS Independent"
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.8,<4"
-opencv-python = ">=4.1,<5"
+[tool.poetry]
+package-mode = false
 
 [[tool.poetry.source]]
 name = "PyPI-Tsinghua"
@@ -21,5 +26,5 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 priority = "primary"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0"]
 build-backend = "poetry.core.masonry.api"
