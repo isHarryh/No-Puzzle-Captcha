@@ -112,6 +112,8 @@ class PuzzleCaptchaSolver:
     """Solves puzzle captchas by applying transformations and template matching."""
 
     DEFAULT_TRANSFORMS = (NormalizeTransform(), EdgeTransform(150, 250))
+    MIN_IMAGE_SIZE = 4
+    MAX_IMAGE_SIZE = 8192
 
     def __init__(self, transforms: Sequence[ImageTransform] = DEFAULT_TRANSFORMS):
         if not isinstance(transforms, Sequence):
@@ -135,6 +137,8 @@ class PuzzleCaptchaSolver:
 
     def handle_image(self, background: MatLike, puzzle: MatLike) -> PuzzleCaptchaResult:
         """Process in-memory images and find the puzzle position."""
+        self._check_image(background, puzzle)
+
         t0 = time.perf_counter()
 
         processed_background = self._apply_transforms(background)
@@ -144,6 +148,25 @@ class PuzzleCaptchaSolver:
         x, y = max_loc
 
         return PuzzleCaptchaResult(x, y, background, puzzle, time.perf_counter() - t0)
+
+    def _check_image(self, background: MatLike, puzzle: MatLike) -> None:
+        if background is None:
+            raise ValueError("Given background image cannot be None")
+        if puzzle is None:
+            raise ValueError("Given puzzle image cannot be None")
+
+        bh, bw = background.shape[:2]
+        ph, pw = puzzle.shape[:2]
+        if bw < PuzzleCaptchaSolver.MIN_IMAGE_SIZE or bh < PuzzleCaptchaSolver.MIN_IMAGE_SIZE:
+            raise ValueError(f"Given background size ({bw}*{bh}) is too small")
+        if bw > PuzzleCaptchaSolver.MAX_IMAGE_SIZE or bh > PuzzleCaptchaSolver.MAX_IMAGE_SIZE:
+            raise ValueError(f"Given background size ({bw}*{bh}) is too large")
+        if pw < PuzzleCaptchaSolver.MIN_IMAGE_SIZE or ph < PuzzleCaptchaSolver.MIN_IMAGE_SIZE:
+            raise ValueError(f"Given puzzle size ({pw}*{ph}) is too small")
+        if pw > PuzzleCaptchaSolver.MAX_IMAGE_SIZE or ph > PuzzleCaptchaSolver.MAX_IMAGE_SIZE:
+            raise ValueError(f"Given puzzle size ({pw}*{ph}) is too large")
+        if pw > bw or ph > bh:
+            raise ValueError(f"The puzzle ({pw}*{ph}) is oversized compared to the background ({bw}*{bh})")
 
     def _apply_transforms(self, image: MatLike) -> MatLike:
         """Applies the sequence of transformations to the image."""
