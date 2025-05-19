@@ -5,7 +5,7 @@ import time
 
 from no_puzzle_captcha import PuzzleCaptchaSolver
 
-for root_path in ["tests/geetest_test", "tests/tricky_test"]:
+for root_path in ["tests/geetest_test", "tests/tricky_test", "tests/tricky_hard_test"]:
     dataset = os.path.join(root_path, "dataset.json")
 
     test: dict = json.load(open(dataset))
