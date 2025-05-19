@@ -1,6 +1,6 @@
 [project]
 name = "No-Puzzle-Captcha"
-version = "1.1.0"
+version = "1.1.1"
 description = "Lightweight Library for Slide Puzzle Captcha Solving"
 authors = [
     {name = "Harry Huang", email = "harryhuang2652@qq.com"}
