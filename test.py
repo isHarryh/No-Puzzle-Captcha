@@ -37,11 +37,11 @@ for root_path in ["tests/geetest_test", "tests/tricky_test", "tests/tricky_hard_
             total_success_bias[1] += std_y - rst.y
         else:
             print(
-                f"- Wrong Answer" +
-                f"\torigin={bg_img}" +
-                f"\tstd=({std_x}, {std_y})" +
-                f"\tinfer=({rst.x}, {rst.y})" +
-                f"\terror={error:.1f}"
+                f"- Wrong Answer"
+                + f"\torigin={bg_img}"
+                + f"\tstd=({std_x}, {std_y})"
+                + f"\tinfer=({rst.x}, {rst.y})"
+                + f"\terror={error:.1f}"
             )
             cnt_failed += 1
             # rst.visualize_and_show()
@@ -55,22 +55,19 @@ for root_path in ["tests/geetest_test", "tests/tricky_test", "tests/tricky_hard_
 
     print(f"\nProcessed {cnt_processed} test cases\n")
     print(
-        f"Elapsed Time (All)  " +
-        f"\t{total_time:.3f}s" +
-        f"\t({total_time / cnt_processed:.3f} s/i, {cnt_processed / total_time:.1f} i/s)"
+        f"Elapsed Time (All)  "
+        + f"\t{total_time:.3f}s"
+        + f"\t({total_time / cnt_processed:.3f} s/i, {cnt_processed / total_time:.1f} i/s)"
     )
     print(
-        f"Elapsed Time (Infer)" +
-        f"\t{total_elapsed_time:.3f}s" +
-        f"\t({total_elapsed_time / cnt_processed:.3f} s/i, {cnt_processed / total_elapsed_time:.1f} i/s)"
+        f"Elapsed Time (Infer)"
+        + f"\t{total_elapsed_time:.3f}s"
+        + f"\t({total_elapsed_time / cnt_processed:.3f} s/i, {cnt_processed / total_elapsed_time:.1f} i/s)"
     )
+    print(f"Accuracy            " + f"\t{accuracy:.1%}\t({cnt_success} correct, {cnt_failed} wrong)")
     print(
-        f"Accuracy            " +
-        f"\t{accuracy:.1%}\t({cnt_success} correct, {cnt_failed} wrong)"
-    )
-    print(
-        f"Label Bias          " +
-        f"\t{math.hypot(avg_bias_x, avg_bias_y):.3f}" +
-        f"\t(x: {avg_bias_x:.3f}, y: {avg_bias_y:.3f})" +
-        "\n"
+        f"Label Bias          "
+        + f"\t{math.hypot(avg_bias_x, avg_bias_y):.3f}"
+        + f"\t(x: {avg_bias_x:.3f}, y: {avg_bias_y:.3f})"
+        + "\n"
     )
