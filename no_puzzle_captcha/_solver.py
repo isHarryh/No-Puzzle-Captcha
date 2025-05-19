@@ -1,3 +1,6 @@
+from cv2.typing import MatLike
+from typing import Sequence, Union
+
 import cv2
 import os
 import time
@@ -5,8 +8,8 @@ import numpy as np
 
 from ._transforms import ImageTransform, NormalizeTransform, EdgeTransform
 
-from cv2.typing import MatLike
-from typing import Sequence
+BytesLike = Union[bytes, bytearray, memoryview]
+_BytesLikeClasses = (bytes, bytearray, memoryview)
 
 
 def _show_image(image: MatLike) -> None:
@@ -125,12 +128,16 @@ class PuzzleCaptchaSolver:
 
     def handle_file(self, background_path: str, puzzle_path: str) -> PuzzleCaptchaResult:
         """Process images from file paths."""
+        self._check_file(background_path, puzzle_path)
+
         background = cv2.imread(background_path)
         puzzle = cv2.imread(puzzle_path)
         return self.handle_image(background, puzzle)
 
-    def handle_bytes(self, background_bytes: bytes, puzzle_bytes: bytes) -> PuzzleCaptchaResult:
+    def handle_bytes(self, background_bytes: BytesLike, puzzle_bytes: BytesLike) -> PuzzleCaptchaResult:
         """Process images from byte data."""
+        self._check_bytes(background_bytes, puzzle_bytes)
+
         background = cv2.imdecode(np.frombuffer(background_bytes, np.uint8), cv2.IMREAD_COLOR)
         puzzle = cv2.imdecode(np.frombuffer(puzzle_bytes, np.uint8), cv2.IMREAD_COLOR)
         return self.handle_image(background, puzzle)
@@ -148,6 +155,22 @@ class PuzzleCaptchaSolver:
         x, y = max_loc
 
         return PuzzleCaptchaResult(x, y, background, puzzle, time.perf_counter() - t0)
+
+    def _check_file(self, background_path: str, puzzle_path: str) -> None:
+        if not os.path.isfile(background_path):
+            raise FileNotFoundError(f"Given background file not found: {background_path}")
+        if not os.path.isfile(puzzle_path):
+            raise FileNotFoundError(f"Given puzzle file not found: {puzzle_path}")
+
+    def _check_bytes(self, background_bytes: BytesLike, puzzle_bytes: BytesLike) -> None:
+        if not isinstance(background_bytes, _BytesLikeClasses):
+            raise TypeError(f"Given background bytes must be a bytes-like object, but got {type(background_bytes)}")
+        if not isinstance(puzzle_bytes, _BytesLikeClasses):
+            raise TypeError(f"Given puzzle bytes must be a bytes-like object, but got {type(puzzle_bytes)}")
+        if len(background_bytes) == 0:
+            raise ValueError("Given background bytes cannot be empty")
+        if len(puzzle_bytes) == 0:
+            raise ValueError("Given puzzle bytes cannot be empty")
 
     def _check_image(self, background: MatLike, puzzle: MatLike) -> None:
         if background is None:
